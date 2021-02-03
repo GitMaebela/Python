@@ -1,28 +1,36 @@
 import random
 from datetime import date
-
 from datetime import datetime
 
 now = datetime.now()
-ticketCode="012654"
-ticketGroup="51465485/51488932"
-ticketTotalCost="45.00"
+ticketCode ="012654"
+ticketGroup ="51465485/51488932"
+ticketTotalCost ="45.00"
 ticketBoardset = []
+ticketIsPowerBallPlus ="YES"
+numOfDraws = 1
+today = date.today()
+dayOfWeek = date.today()
+strDayOfWeek = dayOfWeek.strftime('%A')
+ticketPlayedOnDate = today.strftime("%d %B %Y")
+
+date = now.strftime("%d/%m/%Y")
+time = now.strftime("%H:%M:%S")
+
 p=0
 
 print("")
 print("\t\tPowerBall")
 print("")
-today = date.today()
-
-dayOfWeek = date.today()
-
-strDayOfWeek = dayOfWeek.strftime('%A')
-
-ticketPlayedOnDate = today.strftime("%d %B %Y")
 
 print("\t" + strDayOfWeek + ": ", ticketPlayedOnDate)
-print("\tPOWERBALL PLUS: ")
+
+print("")
+print("    First Draw: " + strDayOfWeek + " " + date)
+print("      VALID RECEIPT FOR " + str(numOfDraws) + " Draw(S)")
+print("\tFROM DRAW ")
+
+print("\tPOWERBALL PLUS: " + ticketIsPowerBallPlus)
 print("----------------------------------------")
 
 for q in range(6):
@@ -48,9 +56,6 @@ for q in range(6):
 print("----------------------------------------")  
 print("\t     Total :R" + ticketTotalCost)
 print("\t\t\t     Incl 15%VAT")  
-
-date = now.strftime("%d/%m/%Y")
-time = now.strftime("%H:%M:%S")
 
 print(ticketGroup + "\t\t  " + ticketCode)
 print(date + "\t\t\t" + time)
