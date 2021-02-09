@@ -148,15 +148,43 @@ print("\tFROM DRAW " , ticketCurrentDrawNum , " To " , ticketlastDrawNum)
 print("\n\t   POWERBALL PLUS: " + ticketIsPowerBallPlus)
 print("--------------------------------------------")
 
-board = ["A", "B", "C", "D", "E", "F"]
+# board = ["A", "B", "C", "D", "E", "F"]
+board = ["A", "B"]
+
 length = len(board)  
 
 for i in range(length):
     boardPowerBall = random.randrange(1, 21)
     str(boardPowerBall)
-    print("     ",board[i],"1(05): # # # # # ",board[i],"2(01):",format(boardPowerBall, '02d'))
+    # print("     ",board[i],"1(05): # # # # # ",board[i],"2(01):",format(boardPowerBall, '02d'))
 
-mainTicketTotalCost = ticketTotalCost * int(numberOfDraws)
+    if isBoardQuickPlay == 'y':
+        for q in range(1):
+            while p < 5:
+                p +=1
+                randNum=random.randrange(1, 51)
+
+                ticketBoardset.append(randNum)
+
+
+                ticketBoardset.sort()
+
+                strRandNum = str(randNum)
+
+                # print(strRandNum + "   ",end='')
+
+            if p == 5:
+                p=0
+
+            # print('   Std:', ticketBoardset," QP")
+            
+            ticketBoardset = list()
+                
+        # print("     ",board[i],"1(05): # # # # # ",board[i],"2(01):",format(boardPowerBall, '02d'))
+
+
+
+mainTicketTotalCost = ticketTotalCost * int(numberOfDraws) * (numberOfDraws +1)
 
 print("--------------------------------------------")  
 print("\t       Total :R", mainTicketTotalCost)
