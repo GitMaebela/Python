@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Norea Bank Statement</title>
+		<style>
+			body {
+				font-family: 'Courier New', Courier, monospace;
+				font-size: 14px;
+				margin: 0px;
+				padding: 0px;
+				background-color: linear-gradient(to right, #626262, #271a1e);
+			}
+
+			section {
+				position: relative;
+				padding: 30px 0px;
+			}
+
+			th {
+				text-align: left;
+				border-bottom: dashed 1px #333;
+			}
+
+			td {
+				padding: 5px 0px !important;
+			}
+
+			.watermark {
+				position: absolute;
+				bottom: 50%;
+				left: 30%;
+				opacity: 0.16;
+				font-size: 36px;
+				color: gray;
+				z-index: -1;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 105px;
+				font-weight: bolder;
+				transform: rotate(-30deg);
+			}
+
+			/* heading */
+			.e-stamp {
+				width: auto;
+				height: auto;
+				color: #000;
+				text-align: center;
+				font-weight: bold;
+				line-height: 20px;
+				float: right;
+				transform: rotate(-15deg);
+				padding: 10px 50px;
+				margin-top: -65px;
+				margin-right: 120px;
+				border: 4px solid;
+				border-image: linear-gradient(to right, #ff9e7e, #AF144B) 10;
+			}
+
+			.legit {
+				color: #FA551E;
+				font-family: Helvetica, sans-serif !important;
+			}
+
+
+			/* end heading */
+			.amounts {
+				text-align: right !important;
+			}
+
+			.container {
+				max-width: 90%;
+				margin: auto;
+			}
+
+			.row {
+				padding: 0 15px;
+			}
+
+			.pagination,
+			.statement-title,
+			.statement-date-range {
+				text-align: center;
+			}
+
+			.footer-note,
+			.legit {
+				font-size: 13px;
+				font-style: italic;
+			}
+
+			/* footer */
+			.footer-note {
+				margin-top: 40px;
+				width: auto;
+				float: left;
+			}
+
+			.footer-logo {
+				width: auto;
+				float: right;
+			}
+
+			/* end footer */
+		</style>
+	</head>
+	<body>
+		<!-- Statement header -->
+		<section>
+			<div class="container">
+				<div class="row statement-title">
+					SAVINGS ACCOUNT STATEMENT
+				</div>
+				<div class="row">
+					<div class="account-info">
+						DATE: 54258  - TIME: <br />
+						CARD NUMBER: <br />
+						ACCOUNT NUMBER:
+					</div>
+					<div class="e-stamp">
+						E-Stamp<br />
+						Ref:<br />
+						<span class="legit">Legit!</span><br />
+						MM/DD/YYYY<br />
+						Norea Bank
+					</div>
+				</div>
+				<div class="row statement-date-range">
+					MM/DD/YYYY TO MM/DD/YYYY
+				</div>
+			</div>
+		</section>
+
+		<!-- Transactions -->
+		<section>
+			<div class="watermark">Confidential</div>
+			<table width="90%" align="center" border="0">
+				<tr>
+					<th>DATE</th>
+					<th>TRANSACTION DESCRIPTION</th>
+					<th>REFERENCE</th>
+					<th class="amounts">AMOUNT</th>
+					<th class="amounts">BALANCE</th>
+				</tr>
+
+				<!-- transactions -->
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+				<tr>
+					<td>MM/DD/YYYY</td>
+					<td>Example transaction description</td>
+					<td>sdfsdf</td>
+					<td class="amounts">$XX.XX</td>
+					<td class="amounts">$XX,XXX.XX</td>
+				</tr>
+
+
+				<!-- Add more rows for additional transactions -->
+			</table>
+		</section>
+
+		<!-- Statement footer -->
+		<section>
+			<div class="container">
+				<div class="row pagination">
+					PAGE 3
+				</div>
+				<div class="row">
+					<div class="footer-note">
+						Norea Bank is an Authorised Financial Services Provider <br />Registered Credit Provider Reg No NCRCP40.
+					</div>
+					<div class="footer-logo">
+						<img src="ABSA_Group_Limited_Logo.svg.png" alt="" width="90">
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
